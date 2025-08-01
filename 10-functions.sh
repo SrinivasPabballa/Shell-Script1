@@ -20,10 +20,10 @@ then
     exit 1 
 fi
 
-dnf install mysqll -y
+dnf install mysql -y
  
 VALIDATE $? "Installing MySql"
 
-dnf install git -y
+dnf install gitt -y
 
 VALIDATE $? "Installing Git"
