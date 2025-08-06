@@ -23,10 +23,10 @@ then
     exit 1 
 fi
 
-dnf install mysql -y &>>$LOGFILE
+dnf install mysql -y  &>>$LOGFILE
  
 VALIDATE $? "Installing MySql"
 
-dnf install git -y &>>$LOGFILE
+dnf install git -y  &>>$LOGFILE
 
 VALIDATE $? "Installing Git"
