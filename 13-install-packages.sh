@@ -9,9 +9,9 @@ N="\e[0m"
 R="\e[32m"
 G="\e[33m"
 
-VALIDATE(){
+VALIDATE() {
 
-    if ($1 -ne 0 )
+    if [ $1 -ne 0 ]
     then
         echo -e "$2..$R FAILURE $N"
     else
