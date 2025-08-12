@@ -1,6 +1,6 @@
 #!/bin/bash
 USERID=$(id -u)
-TIMESTAMP=$(date -%f+%H+%M+%S)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPTNAME=$( echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$TIMESTAMP-$SCRIPTNAME.log
 
@@ -16,6 +16,7 @@ VALIDATE() {
         echo -e "$2..$R FAILURE $N"
     else
         echo  -e "$2..$G SUCCESS $N"
+    fi    
 }
 
 if [ $USERID -ne 0 ]
