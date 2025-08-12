@@ -7,7 +7,7 @@ LOGFILE=/tmp/$TIMESTAMP-$SCRIPTNAME.log
 Y="\e[33m"
 N="\e[0m"
 R="\e[32m"
-G="\e[33m"
+G="\e[31m"
 
 VALIDATE() {
 
